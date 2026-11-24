@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alex Morgan – Front-end developer and designer</title>
-  <meta name="description" content="Portfolio of Alex Morgan, a front-end developer and designer building fast, accessible websites.">
+  <title>Abdelrahmane Tabouchi – AI &amp; Data Science Engineering Student</title>
+  <meta name="description" content="Portfolio of Abdelrahmane Tabouchi, a fifth-year AI and Data Science engineering student in Annaba, Algeria, working on machine learning, NLP and computer vision.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
@@ -12,16 +12,17 @@
 </head>
 <body>
 
-  <a class="skip" href="#work">Skip to content</a>
+  <a class="skip" href="#projects">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap bar">
-      <a class="brand" href="#top">Alex Morgan</a>
+      <a class="brand" href="#top">A. Tabouchi</a>
       <nav aria-label="Main">
         <ul>
-          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -30,113 +31,151 @@
 
   <main id="top">
 
-    <!-- HERO: replace the name, intro and links with your own -->
     <section class="hero wrap">
-      <h1><span>Alex</span> <span>Morgan</span></h1>
-      <p class="lead">I design and build fast, accessible websites for startups and small teams.</p>
+      <h1><span>Abdelrahmane</span> <span>Tabouchi</span></h1>
+      <p class="lead">AI and Data Science engineering student building machine learning, NLP and computer vision models.</p>
+      <p class="sub">Annaba, Algeria. Looking for an end-of-studies internship or junior role in AI / Data Science.</p>
       <p class="actions">
-        <a class="btn btn-primary" href="#work">See my work</a>
-        <a class="btn btn-ghost" href="mailto:hello@example.com">Email me</a>
+        <a class="btn btn-primary" href="#projects">See my projects</a>
+        <a class="btn btn-ghost" href="mailto:abdou.mister.15@gmail.com">Email me</a>
       </p>
     </section>
 
-    <!-- WORK: duplicate an <li> to add a project -->
-    <section class="section wrap" id="work">
-      <h2>Selected work</h2>
-      <ul class="projects">
-        <li>
-          <a class="project" href="#">
-            <div>
-              <h3>Harbor Analytics</h3>
-              <p>A dashboard that turns shipping data into clear weekly reports. Cut report prep time from two days to ten minutes.</p>
-              <p class="tags">React, TypeScript, D3</p>
-            </div>
-            <span class="year">2025</span>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="#">
-            <div>
-              <h3>Fieldnotes</h3>
-              <p>A note-taking app for researchers, with offline sync and full keyboard navigation.</p>
-              <p class="tags">Vue, Node.js, PostgreSQL</p>
-            </div>
-            <span class="year">2024</span>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="#">
-            <div>
-              <h3>Olive &amp; Oak</h3>
-              <p>An online store for a family-run ceramics studio. Page load under one second on mobile.</p>
-              <p class="tags">Shopify, JavaScript, Figma</p>
-            </div>
-            <span class="year">2023</span>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="#">
-            <div>
-              <h3>Transit Pulse</h3>
-              <p>A live city bus tracker that thousands of commuters check every morning.</p>
-              <p class="tags">Next.js, Mapbox, REST APIs</p>
-            </div>
-            <span class="year">2022</span>
-          </a>
-        </li>
-      </ul>
+    <section class="section wrap" id="projects">
+      <h2>Projects</h2>
+      <div>
+
+        <h3 class="group">AI and Data Science</h3>
+
+        <article class="project">
+          <div>
+            <h4>Facial Emotion Recognition</h4>
+            <p class="tags">Python, CNN, TensorFlow/Keras, FER2013, AffectNet, Flask</p>
+          </div>
+          <ul>
+            <li>Built and evaluated deep learning models for facial emotion classification on the FER2013 and AffectNet datasets.</li>
+            <li>Compared custom CNN architectures with transfer learning (DenseNet121), using data augmentation, regularization and fine-tuning to improve generalization.</li>
+            <li>Deployed the model in an interactive Flask web application for emotion prediction.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div>
+            <h4>Biomedical Named Entity Recognition</h4>
+            <p class="tags">Python, NLP, BiLSTM-CRF, Transformers, BC5CDR</p>
+          </div>
+          <ul>
+            <li>Implemented and benchmarked four approaches on the BC5CDR dataset: BiLSTM-CRF, PubMedBERT, BioLinkBERT and a Mistral-based LLM.</li>
+            <li>Compared model performance and analyzed the main challenges of biomedical information extraction.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div>
+            <h4>Information Retrieval System</h4>
+            <p class="tags">Python, NLP, Vector Space Model, Fuzzy Search, LSI</p>
+          </div>
+          <ul>
+            <li>Built a complete retrieval pipeline on the CISI collection (1,460 documents): preprocessing, lemmatization, vocabulary construction and an inverted index.</li>
+            <li>Implemented and compared three retrieval models: Vector Space Model, Fuzzy Search and Latent Semantic Indexing (LSI).</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div>
+            <h4>Parkinson’s Disease Detection</h4>
+            <p class="tags">Python, Scikit-learn, SVM, Machine Learning</p>
+            <dl class="stats">
+              <div><dt>Accuracy</dt><dd>88.14%</dd></div>
+              <div><dt>ROC-AUC</dt><dd>0.8985</dd></div>
+            </dl>
+          </div>
+          <ul>
+            <li>Trained an SVM classifier with an RBF kernel to detect Parkinson’s disease.</li>
+            <li>Assessed the model with classification metrics and ROC-AUC analysis.</li>
+          </ul>
+        </article>
+
+        <h3 class="group">Software and development</h3>
+
+        <article class="project">
+          <div>
+            <h4>Bio-Inspired Optimization Algorithms</h4>
+            <p class="tags">Python, Genetic Algorithms, Combinatorial Optimization</p>
+          </div>
+          <ul>
+            <li>Implemented Genetic Algorithms from scratch to solve the Traveling Salesman Problem, Knapsack and Eight Queens.</li>
+            <li>Designed selection, crossover and mutation operators, and compared the PMX, OX and CX crossover strategies.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div>
+            <h4>Alumni Platform</h4>
+            <p class="tags">Web Development, Database Management</p>
+          </div>
+          <ul>
+            <li>Developed a database-driven web platform connecting university alumni, with features for networking and information sharing.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div>
+            <h4>Game Development</h4>
+            <p class="tags">Unity, C#</p>
+          </div>
+          <ul>
+            <li>Developed a game in Unity (C#), implementing game mechanics and interactive elements.</li>
+          </ul>
+        </article>
+
+      </div>
     </section>
 
     <section class="section wrap" id="about">
       <h2>About</h2>
       <div class="prose">
-        <p>I'm a front-end developer with six years of experience turning rough ideas into polished products. I care about clear interfaces, readable code and pages that work for everyone, on any device.</p>
-        <p>I work with founders and product teams from first sketch to launch, and I stay for the details that come after.</p>
-        <h3>Skills</h3>
-        <dl class="skills">
-          <div><dt>Design</dt><dd>Figma, prototyping, design systems</dd></div>
-          <div><dt>Front end</dt><dd>HTML, CSS, JavaScript, TypeScript, React, Vue</dd></div>
-          <div><dt>Tools</dt><dd>Git, Node.js, accessibility audits, performance testing</dd></div>
+        <p>I’m a fifth-year Computer Science Engineering student specializing in Artificial Intelligence and Data Science at Badji Mokhtar Annaba University.</p>
+        <p>I design, train and compare Machine Learning, Deep Learning, NLP and Computer Vision models, from classical approaches like SVM and BiLSTM-CRF to modern Transformers and LLM-based methods. I also build full applications for web, mobile and games, and I want to turn ideas into practical, real-world solutions.</p>
+        <dl class="facts">
+          <div><dt>Languages</dt><dd>Arabic (native), French (good), English (good)</dd></div>
+          <div><dt>Interests</dt><dd>Artificial Intelligence, Machine Learning, Hackathons, Innovation, Entrepreneurship</dd></div>
+          <div><dt>Achievement</dt><dd>NoCodeHack: finalist in the 1st edition, participant in the 2nd edition</dd></div>
         </dl>
       </div>
     </section>
 
-    <section class="section wrap" id="experience">
-      <h2>Experience</h2>
-      <ol class="timeline">
-        <li>
-          <p class="when">2024 – Present</p>
-          <div>
-            <h3>Senior front-end developer, Northwind</h3>
-            <p>Lead a team of four building the customer web app used by 50,000 people.</p>
-          </div>
-        </li>
-        <li>
-          <p class="when">2021 – 2024</p>
-          <div>
-            <h3>Front-end developer, Brightside Studio</h3>
-            <p>Shipped more than 20 client websites and set up the studio's shared component library.</p>
-          </div>
-        </li>
-        <li>
-          <p class="when">2019 – 2021</p>
-          <div>
-            <h3>Junior developer, Pixel &amp; Co.</h3>
-            <p>Built marketing sites and learned to ship fast without breaking things.</p>
-          </div>
-        </li>
-      </ol>
+    <section class="section wrap" id="skills">
+      <h2>Skills</h2>
+      <dl class="facts">
+        <div><dt>Programming languages</dt><dd>Python, Java, C, C++, JavaScript, Dart, C#, SQL</dd></div>
+        <div><dt>Machine learning and deep learning</dt><dd>Machine Learning, Deep Learning, CNN, SVM, Transformers, Genetic Algorithms, Model Evaluation</dd></div>
+        <div><dt>NLP and computer vision</dt><dd>NLP, Biomedical NLP, Information Retrieval (VSM, LSI), OpenCV</dd></div>
+        <div><dt>AI frameworks and libraries</dt><dd>PyTorch, TensorFlow, Keras, Scikit-learn, Hugging Face, NumPy, Pandas</dd></div>
+        <div><dt>Web and backend</dt><dd>HTML, CSS, JavaScript, Node.js, Express.js, Flask, REST APIs</dd></div>
+        <div><dt>Mobile and game</dt><dd>Flutter, Dart, Firebase, Unity</dd></div>
+        <div><dt>Databases</dt><dd>MySQL, MongoDB, Firebase</dd></div>
+        <div><dt>Tools</dt><dd>Git, GitHub, Jupyter Notebook, Google Colab, VS Code, Postman</dd></div>
+      </dl>
+    </section>
+
+    <section class="section wrap" id="education">
+      <h2>Education</h2>
+      <div class="prose">
+        <h3 class="degree">State Engineer Degree in Computer Science, Artificial Intelligence and Data Science</h3>
+        <p class="when">Badji Mokhtar Annaba University, Annaba, Algeria. Fifth year in progress, expected graduation in 2027.</p>
+        <p><strong>Relevant coursework:</strong> Machine Learning, Deep Learning, Data Mining, Natural Language Processing, Computer Vision, Information Retrieval, Optimization, Software Engineering.</p>
+      </div>
     </section>
 
     <section class="section wrap" id="contact">
       <h2>Contact</h2>
       <div>
-        <p class="lead">Have a project in mind? Tell me about it.</p>
-        <p><a class="mail" href="mailto:hello@example.com">hello@example.com</a></p>
+        <p class="lead">Have an internship or project in mind? Get in touch.</p>
+        <p><a class="mail" href="mailto:abdou.mister.15@gmail.com">abdou.mister.15@gmail.com</a></p>
         <ul class="links">
-          <li><a href="https://github.com/">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-          <li><a href="#">Download CV</a></li>
+          <li><a href="tel:+213676398939">+213 676 39 89 39</a></li>
+          <li>Annaba, Algeria</li>
         </ul>
       </div>
     </section>
@@ -144,7 +183,7 @@
   </main>
 
   <footer class="wrap site-footer">
-    <p>&copy; 2026 Alex Morgan</p>
+    <p>&copy; 2026 Abdelrahmane Tabouchi</p>
     <p><a href="#top">Back to top</a></p>
   </footer>
 
